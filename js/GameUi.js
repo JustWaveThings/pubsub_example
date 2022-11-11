@@ -20,6 +20,7 @@ new (class GameUi {
 			PubSub.publish('user_click_xp');
 		});
 	}
+
 	congratulations(level, next_level_xp) {
 		this.currentLevel.textContent = level;
 		this.nextLevelXp.textContent = next_level_xp;
@@ -32,7 +33,6 @@ new (class GameUi {
 
 	updateCurrentXp(xp) {
 		this.currentXp.textContent = xp;
-		console.log(xp);
 	}
 
 	updateProgressBar(xp, next_level_xp) {
